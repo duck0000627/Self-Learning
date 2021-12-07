@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SelfLearning">
         <activity
+            android:name=".coffee"
+            android:exported="false" />
+        <activity
+            android:name=".tea"
+            android:exported="false" />
+        <activity
+            android:name=".Juice"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
