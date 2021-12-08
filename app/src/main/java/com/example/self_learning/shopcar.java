@@ -2,6 +2,7 @@ package com.example.self_learning;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +22,9 @@ public class shopcar extends AppCompatActivity {
     private View.OnClickListener btn_homeListener = new View.OnClickListener(){
         @Override
         public void onClick(View view) {
-            finish();
+            Intent intent = new Intent();
+            intent.setClass(shopcar.this,MainActivity.class);
+            startActivity(intent);
         }
     };
 }
