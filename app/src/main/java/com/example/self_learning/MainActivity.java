@@ -17,10 +17,12 @@ public class MainActivity extends AppCompatActivity {
         Button btn_juice = (Button) findViewById(R.id.btn_juice);
         Button btn_tea = (Button) findViewById(R.id.btn_tea);
         Button btn_coffee = (Button) findViewById(R.id.btn_coffee);
+        Button btn_total = (Button) findViewById(R.id.btn_total);
 
         btn_juice.setOnClickListener(btn_juiceListener);
         btn_tea.setOnClickListener(btn_teaListener);
         btn_coffee.setOnClickListener(btn_coffeeListener);
+        btn_total.setOnClickListener(btn_totalListener);
     }
 
     private View.OnClickListener btn_juiceListener = new View.OnClickListener(){
@@ -41,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v){
             Intent intent = new Intent();
             intent.setClass(MainActivity.this,coffee.class);
+            startActivity(intent);
+        }
+    };
+    private View.OnClickListener btn_totalListener = new View.OnClickListener(){
+        public void onClick(View v){
+            Intent intent = new Intent();
+            intent.setClass(MainActivity.this,shopcar.class);
             startActivity(intent);
         }
     };

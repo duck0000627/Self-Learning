@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SelfLearning">
         <activity
+            android:name=".ice"
+            android:exported="false" />
+        <activity
+            android:name=".sugar"
+            android:exported="false" />
+        <activity
+            android:name=".shopcar"
+            android:exported="false" />
+        <activity
             android:name=".coffee"
             android:exported="false" />
         <activity
