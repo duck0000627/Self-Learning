@@ -36,6 +36,9 @@ public class Juice extends AppCompatActivity {
         public void onClick(View view) {
             Intent intent = new Intent();
             intent.setClass(Juice.this,sugar.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("Juice","蘋果汁");
+            intent.putExtras(bundle);
             startActivity(intent);
         }
     };
@@ -44,6 +47,9 @@ public class Juice extends AppCompatActivity {
         public void onClick(View view) {
             Intent intent = new Intent();
             intent.setClass(Juice.this,sugar.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("Juice","芭樂汁");
+            intent.putExtras(bundle);
             startActivity(intent);
         }
     };
@@ -52,6 +58,9 @@ public class Juice extends AppCompatActivity {
         public void onClick(View view) {
             Intent intent = new Intent();
             intent.setClass(Juice.this,sugar.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("Juice","西瓜汁");
+            intent.putExtras(bundle);
             startActivity(intent);
         }
     };
